@@ -1,0 +1,19 @@
+header {
+	padding: 20px 15px 5px;
+}
+
+h1 {
+	font-family: $comics-font;
+	color: $blueish;
+	font-size: 2.75em;
+	letter-spacing: 5px;
+	width: 95%;
+	margin:0;
+   text-shadow:
+       5px 5px 0 white,
+       2px 2px 0 white,
+     -2px -2px 0 white,  
+      2px -2px 0 white,
+      -2px 3px 0 white,
+       2px 2px 0 white;
+}
