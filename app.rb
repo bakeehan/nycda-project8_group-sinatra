@@ -2,6 +2,23 @@ require "sinatra"
 require "sendgrid-ruby"
 
 get "/" do 
+	erb :index
+end
+
+get "/about" do 
+	erb :about
+end
+
+get "/gallery" do 
+	erb :gallery
+end
+
+get "/todolist" do 
+	erb :todolist
+end
+
+
+get "/contact" do 
 	erb :contact
 end
 
@@ -25,4 +42,5 @@ get "/received" do
 	puts response.headers
 
 	erb :received
+	
 end
