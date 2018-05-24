@@ -4,6 +4,9 @@
 	<input type="text" name="email" class="mailget">
 	<input type="text" name="subject" class="subget">
 	<div class="fyi">Message — max. 1950 characters</div>
-	<textarea name="content" form="mailform" class="textget"></textarea>
+	<div id="lengthCheck"></div>
+	<textarea name="content" form="mailform" class="textget" id="mailcontent"></textarea>
 	<input type="submit" name="" class="mailgo">
 </form>
+
+<script src="javascript/mail.js"></script>
