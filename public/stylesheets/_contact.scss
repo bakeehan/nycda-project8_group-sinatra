@@ -1,0 +1,30 @@
+.mailbox {
+	padding: 0 5px;
+	display:grid;
+	grid-template-areas:
+		'sender subj'
+		'address line'
+		'fyi fyi'
+		'body body'
+		'go .';
+	grid-row-gap: 5px;
+	grid-column-gap: 15px; 
+}
+
+.label1 {grid-area:sender;}
+.label2 {grid-area:subj;}
+.mailget {grid-area:address;}
+.subget {grid-area:line;}
+.textget {grid-area:body;}
+.mailgo {grid-area:go;}
+.fyi {grid-area:fyi;}
+
+.textget {
+	height:300px;
+}
+
+.label1, .label2, .fyi {
+	font-style: italic;
+	color: $dkblueish;
+	font-variant: small-caps;
+}
