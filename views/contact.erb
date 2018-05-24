@@ -1,6 +1,9 @@
-<form method="get" action="/received">
-	email <input type="text" name="email">
-	subject <input type="text" name="subject">
-	text <input type="text" name="content">
-	<input type="submit" name="">
+<form method="get" action="/received" class="mailbox" id="mailform">
+	<div class="label1">Your email</div>
+	<div class="label2">Subject</div>
+	<input type="text" name="email" class="mailget">
+	<input type="text" name="subject" class="subget">
+	<div class="fyi">Message — max. 1950 characters</div>
+	<textarea name="content" form="mailform" class="textget"></textarea>
+	<input type="submit" name="" class="mailgo">
 </form>
