@@ -1,0 +1,46 @@
+#wrapper{
+  width: 100%;
+}
+
+#dates{
+  margin-top: 10px;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  text-shadow:
+  #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,  #000 0px 0px 1px,
+   #000 0px 0px 1px, #000 0px 0px 1px,  #000 0px 0px 1px, #000 0px 0px 1px;
+
+}
+
+#noted{
+  position: absolute;
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+  padding-right:10px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  text-shadow:
+  #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,  #000 0px 0px 1px,
+   #000 0px 0px 1px, #000 0px 0px 1px,  #000 0px 0px 1px, #000 0px 0px 1px;
+}
+.exits{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  text-shadow:
+  #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+
+}
+
+#breaks{
+  line-height:150%;
+}

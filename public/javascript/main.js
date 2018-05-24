@@ -4,7 +4,7 @@ var deleteNote=document.getElementById('deleteNote')
 var createDate=document.getElementById('createDate')
 var createNote=document.getElementById('createNote')
 var colorPicker=document.getElementById('colorPicker')
-var wrapperChildren=wrapper.children
+var wrapperChildren=wrapper.children;
 var dates=document.getElementById('dates')
 
 var notes=[]
@@ -30,33 +30,28 @@ function create(){
   list.style.wordWrap="break-word"
   list.style.height="300px"
   list.style.position="relative"
+  list.className="list"
   list.style.boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
   list.style.padding="10px"
   list.style.float="left"
-  list.innerHTML="<span id='exits'>X</span><span id='dates'>" + notes[notes.length-1].date + "</span><p>" + "<span id='noted'><u>Reminder:</u><br id='breaks'>" + notes[notes.length-1].info + "</span>"
+  list.innerHTML="<span class='exits' id='" + [notes.length-1] + "'>X</span><span id='dates'>" + notes[notes.length-1].date + "</span><p>" + "<span id='noted'><u>Reminder:</u><br id='breaks'>" + notes[notes.length-1].info + "</span>"
   wrapper.appendChild(list)
 
-  var exits=document.getElementById('exits')
-  exits.addEventListener("click", function(){
-    for(i=0;i<wrapperChildren.length;i++){
-      if(wrapperChildren[i].innerHTML.indexOf("<span id='exits'>X</span>")>0){
-        wrapperChildren[i].remove()
-        i--
-      }
-    }
-  })
 
+  var exits = document.getElementsByClassName("exits");
 
-  list.addEventListener("click", function(){
-    console.log(list.style.backgroundColor);
+  function clickExit(clicked) {
+    clicked.remove()
+  }
 
-     if(list.style.boxShadow="0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19)") {
-      list.style.boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-    }
-    else if(list.style.boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"){
-      list.style.boxShadow="0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 0, 0, 0.19)"
-    }
-  })
+for(i=0;i<exits.length;i++){
+    exits[i].addEventListener("click", function(event){
+      clickExit(event.path[1]);
+      console.log(event)
+
+    })
+  }
+
 }
 
 
