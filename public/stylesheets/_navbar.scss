@@ -7,15 +7,18 @@
 	padding: 5px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
+    -webkit-transition: letter-spacing 1s;
+    transition: letter-spacing 1s;
 }
 
 .nav a:hover {
 	color: $dkblueish;
+	letter-spacing: 2px;
 }
 
-.nav a i {
+.nav i {
 	font-family: $comics-font;
 	font-style: normal;
-	margin-left: 2px;
+	margin-left: 3px;
 	color: $dkblueish;
 }
