@@ -1,0 +1,24 @@
+.nav a {
+	display:block;
+	color: $blueish;
+	background-color: white;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+    -webkit-transition: letter-spacing 1s;
+    transition: letter-spacing 1s;
+}
+
+.nav a:hover {
+	color: $dkblueish;
+	letter-spacing: 2px;
+}
+
+.nav i {
+	font-family: $comics-font;
+	font-style: normal;
+	margin-left: 3px;
+	color: $dkblueish;
+}
