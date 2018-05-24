@@ -39,3 +39,9 @@ header {
 footer {
 	grid-area: footer;
 }
+
+h2 {
+	font-family: $comics-font;
+	margin: 0 0 2px;
+	letter-spacing: 3px;
+}
