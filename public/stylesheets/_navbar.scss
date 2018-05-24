@@ -1,0 +1,21 @@
+.nav a {
+	display:block;
+	color: $blueish;
+	background-color: white;
+	margin: 10px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav a:hover {
+	color: $dkblueish;
+}
+
+.nav a i {
+	font-family: $comics-font;
+	font-style: normal;
+	margin-left: 2px;
+	color: $dkblueish;
+}
