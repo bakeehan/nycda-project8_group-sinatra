@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Bitchin'-Ass Comics</title>
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Bangers|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -9,11 +11,11 @@
 	<header><h1>Bitchin'-Ass Comics</h1></header>
 
 	<div class="nav">
-		<a href="/">home</a>
-		<a href="/about">about us</a>
-		<a href="/gallery">gallery</a>
-		<a href="todolist">to-do list</a>
-		<a href="/contact">contact us</a>
+		<a href="/">home<i><%= @home %></i></a>
+		<a href="/about">about us<i><%= @abt %></i></a>
+		<a href="/gallery">gallery<i><%= @gal %></i></a>
+		<a href="todolist">to-do list<i><%= @list %></i></a>
+		<a href="/contact">contact us<i><%= @cont %></i></a>
 	</div>
 
 	<div class="container">
@@ -21,6 +23,8 @@
 		<%= yield %>
 		
 	</div>
+
+	<footer></footer>
 
 </body>
 </html>

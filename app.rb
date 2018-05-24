@@ -2,27 +2,34 @@ require "sinatra"
 require "sendgrid-ruby"
 
 get "/" do 
+	@home = "!"
 	erb :index
 end
 
 get "/about" do 
+	@abt = "!"
 	erb :about
 end
 
 get "/gallery" do 
+	@gal = "!"
 	erb :gallery
 end
 
 get "/todolist" do 
+	@list = "!"
 	erb :todolist
 end
 
 
 get "/contact" do 
+	@cont = "!"
 	erb :contact
 end
 
 get "/received" do 
+
+	@cont = "!"
 
 	@email = params[:email]
 	@subject = params[:subject]

@@ -1,0 +1,41 @@
+html, body {
+	height: 100%;
+	margin-top:-5px;
+	padding-bottom:5px;
+}
+
+body {
+	min-height:100%;
+	background-image: url('../images/benday.jpg');
+	background-position: -50px top;
+	background-size:350px 110%;
+	background-repeat: no-repeat;
+	display:grid;
+	grid-template-areas: 'head head'
+		'nav body'
+		'nav footer';
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: auto 9fr 1fr;
+	margin-right: 40px;
+	font-family: $basic-font;
+}
+
+header {
+	grid-area: head;
+}
+
+.container {
+	grid-area: body;
+	background-color: white;
+	border-radius: 15px;
+	border: 5px solid $reddish;
+	padding: 10px;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+footer {
+	grid-area: footer;
+}
