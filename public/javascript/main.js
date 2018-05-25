@@ -43,7 +43,6 @@ function create(){
   list.style.position="relative"
   list.className="list"
   list.style.boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-  list.style.padding="10px"
   list.style.float="left"
   list.innerHTML="<span class='exits'>X</span><span id='dates'>" + notes[notes.length-1].date + "</span><p>" + "<span id='noted'><u>Reminder:</u><br id='breaks'>" + notes[notes.length-1].info + "</span>"
   wrapper.appendChild(list)
