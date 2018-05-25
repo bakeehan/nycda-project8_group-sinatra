@@ -1,6 +1,4 @@
 var wrapper=document.getElementById('wrapper')
-var addNote=document.getElementById('addNote')
-var deleteNote=document.getElementById('deleteNote')
 var createDate=document.getElementById('createDate')
 var createNote=document.getElementById('createNote')
 var colorPicker=document.getElementById('colorPicker')
