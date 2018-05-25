@@ -13,19 +13,16 @@ function Notes1(date, info, color){
   this.date=date
   this.info=info
   this.color=color
-
 }
 
 function construct(){
   var objRegex = /^[0-9/]{8,10}$/;
-
   if(objRegex.test(createDate.value) == true){
     notes.push(new Notes1(createDate.value, createNote.value, colorPicker.value))
   }
   else{
     alert("Please Enter Only Digits & /'s'.");
   }
-
 }
 
 
