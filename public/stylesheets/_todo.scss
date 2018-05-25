@@ -1,5 +1,5 @@
 #postItMain{
-  font-weight: normal;
+  // font-weight: normal;
   background-color: white;
   margin:0 auto;
   padding: 10px;
@@ -7,6 +7,10 @@
   word-wrap:break-word;
   height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  line-height: 1.6;
+  font-style: italic;
+  color: $dkblueish;
+  font-variant: small-caps;
 }
 
 #wrapper{
@@ -15,6 +19,7 @@
 
 #createNote{
   width: 80%;
+  height: 50%;
 }
 
 #dates{
@@ -44,6 +49,7 @@
   #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,  #000 0px 0px 1px,
    #000 0px 0px 1px, #000 0px 0px 1px,  #000 0px 0px 1px, #000 0px 0px 1px;
 }
+
 .exits{
   position: absolute;
   top: 5%;
