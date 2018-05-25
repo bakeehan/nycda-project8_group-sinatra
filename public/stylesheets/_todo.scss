@@ -1,9 +1,9 @@
 #postItMain{
   font-weight: normal;
-  background-color:
+  background-color: white;
   margin:0 auto;
   padding: 10px;
-  width: 300px;
+  width: 50%;
   word-wrap:break-word;
   height: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -11,6 +11,10 @@
 
 #wrapper{
   width: 100%;
+}
+
+#createNote{
+  width: 80%;
 }
 
 #dates{
