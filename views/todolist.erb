@@ -1,7 +1,6 @@
-Date: <input id="createDate" placeholder="MM/DD/YYY" maxlength="10"><br>
+Date: <input id="createDate" placeholder="MM/DD/YYYY" maxlength="10" oninput="this.value = this.value.replace(/[^a-z]/, '')"><br>
 Reminder: <input id="createNote" placeholder="Type your reminder here" maxlength="400"><br>
 Pick post-it color: <input id="colorPicker" type="color" value="#ffee00"><br>
 <button id="addNote">CREATE POST-IT</button>
-<button id="deleteNote">DELETE</button>
     <div id="wrapper">
     </div>
